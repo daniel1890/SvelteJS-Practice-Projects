@@ -12,7 +12,7 @@
 </script>
 
 <main>
-	<!-- Door een variable in {curly braces} te zetten zorg je ervoor dat het een reactief element is wat normaal niet mogelijk is in html -->
+	<!-- Door een variable in {curly braces} te zetten zorg je ervoor dat je inline aan html javascript code toe kan voegen -->
 	<h1>Hello {name}!</h1>
 	<p style = "color: {beltColour}">{beltColour} belt.</p>
 
