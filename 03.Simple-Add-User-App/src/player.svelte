@@ -5,7 +5,7 @@
   const dispatch = createEventDispatcher();
 
   // Met het export keyword geef je aan dat het component gebruikt gaat worden buiten dit bestand
-  // , in de file waar je het component aanroept kan je dus de variabelen waar export voor staat bepalen.
+  // , in de file waar je het component aanroept kan je dus de variabelen waar export voor staat bepalen en/of gebruiken.
   export let name;
   export let points;
   let showControls = false;
@@ -21,6 +21,7 @@
   const toggleControls = () => (showControls ^= true);
 
   // Stuur de naam van de speler mee en roep deze aan in de main App, door daarna de players [] te filteren mbv de naam verwijder je makkelijk een speler
+  // , werkt alleen wanneer elke speler een unieke naam heeft want bij gelijke namen zouden beide spelers verwijdert worden
   const onDelete = () => dispatch("deleteplayer", name);
 </script>
 
